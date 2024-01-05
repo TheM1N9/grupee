@@ -1,0 +1,368 @@
+body {
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 150px;
+}
+
+.logo-container {
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    /* Prevent image overflow */
+    border-radius: 50%;
+    /* margin-right: 20px; */
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode:difference;
+}
+
+.name {
+    font-size: 40px;
+    font-family: 'Notable', sans-serif;
+    margin-bottom: 12px;
+}
+
+.name:hover{
+    text-decoration: none;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #2e82d5;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 115px;
+}
+
+.search-input {
+    padding: 10px;
+    width: 350px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+}
+
+.search-icon {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    background-color: #2e82d5;
+}
+
+/* Pop-up styles */
+.popup {
+    display: none;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Close button styles */
+.close-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Login Pop-up styles */
+#login-popup .login-container {
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+#login-popup h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#login-popup input[type="text"],
+#login-popup input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login-popup button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-popup button[type="submit"]:hover {
+    background-color: #2e82d5;
+}
+
+#login-popup p {
+    margin-top: 10px;
+}
+
+/* Sign Up Pop-up styles */
+#signup-popup .signup-container {
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+#signup-popup h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#signup-popup input[type="text"],
+#signup-popup input[type="email"],
+#signup-popup input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#signup-popup button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#signup-popup button[type="submit"]:hover {
+    background-color: #2e82d5;
+}
+
+#signup-popup p {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.left-s {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.right-s {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.dash {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 25px;
+}
+
+.dash:hover {
+    color: #2e82d5;
+    text-decoration: underline;
+}
+
+.logo-c {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    /* Prevent image overflow */
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.search-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 115px; */
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    margin-inline: 125px;
+    margin-top: 50px;
+}
+
+.container1 {
+    display: inline;
+    justify-content: left;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    padding: 20px;
+}
+
+.container1:hover{
+    transform: scale(1.07);
+}
+
+.pro-name {
+    /* margin: 0; */
+    margin-left: 20px;
+    display: flex;
+    align-items: start;
+    color: aqua;
+}
+
+b {
+    display: flex;
+    margin-left: 20px;
+    align-self: start;
+    margin-bottom: 10px;
+}
+
+/* Style the container div that holds the spline-viewer */
+#spline-background {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1; /* Behind other content */
+}
+
+        /* Media Queries for responsiveness */
+
+@media (max-width: 768px) {
+    /* Adjust header styles for smaller screens */
+    body {
+    background-image: url("https://imgs.search.brave.com/nswSbDA6cShlqpBCl4eQFJUuxFMH_0JLdLVTV8vvF-c/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93LmZv/cmZ1bi5jb20vZmV0/Y2gvYmMvYmM5ODEw/YTUwMzc2OWVhNjQ4/ZjcwNmUzNTFhYWVj/ZGUuanBlZw");
+    background-repeat: no-repeat;
+    background-size:cover;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .left-side {
+        margin: 10px 0;
+    }
+
+    .logo-container {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .right-side {
+        margin: 20px 0;
+        position: relative;
+        bottom: 0px;
+    }
+
+    .button {
+        margin: 5px;
+    }
+
+    /* Adjust search container styles for smaller screens */
+    .search-container {
+        margin-top: 20px;
+    }
+
+    .search-input {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for even smaller screens */
+    .search-input {
+        font-size: 14px;
+    }
+
+    /* Adjust pop-up content width for smaller screens */
+    .popup-content {
+        width: 90%;
+        max-width: 320px;
+    }
+}
